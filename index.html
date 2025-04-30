@@ -3,43 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Cyrus Namjoo | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>Hello, I'm Cyrus Namjoo</h1>
-    <p>Welcome to my personal portfolio site</p>
-    <img src="Assets/profile.jpeg" alt="My photo" width="150">
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#contact">Contact</a>
-    </nav>
+<body class="bg-light text-dark">
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Cyrus Namjoo</h1>
+      <p class="lead">Master of Information Systems Student | Future Systems Designer</p>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m passionate about building information systems, data-driven solutions, and learning new technologies.</p>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <p>I am passionate about building smart, efficient systems that bridge people and technology. I enjoy turning complex problems into practical solutions and am currently focused on developing a professional portfolio that highlights my capabilities in data, system design, and web development.</p>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Name of project 1</li>
-      <li>Name of project 2</li>
-      <li>Name of project 3</li>
-    </ul>
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Project1</h5>
+              <p class="card-text">Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Project2</h5>
+              <p class="card-text">Description</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Project3</h5>
+              <p class="card-text">Description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: cyrusnamjoo@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/CyrusNamjoo" target="_blank">github.com/CyrusNamjoo</a></p>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Contact</h2>
+      <p>Email: cyrusnamjoo@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/CyrusNamjoo" target="_blank">github.com/CyrusNamjoo</a></p>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Cyrus Namjoo. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <small>&copy; 2025 Cyrus Namjoo. All rights reserved.</small>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

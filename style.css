@@ -1,30 +1,28 @@
 body {
+  background-color: #000;
+  color: #fff;
   font-family: 'Poppins', sans-serif;
 }
 
-header h1 {
-  font-size: 3rem;
+a {
+  color: #66ccff;
+  text-decoration: none;
 }
 
-header p {
-  font-size: 1.25rem;
-}
-
-nav a {
-  color: #007acc;
-}
-
-nav a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+header, footer, section {
+  background-color: transparent;
 }
 
-footer {
-  font-size: 0.85rem;
-  color: #ccc;
+.navbar {
+  background-color: #111;
+}
+
+.card {
+  background-color: #1a1a1a;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

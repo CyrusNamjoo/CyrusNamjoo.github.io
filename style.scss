@@ -1,41 +1,28 @@
-// 🎨 Variables
-$primary-color: #007acc;
-$secondary-color: #444;
-$background-color: #f8f9fa;
-$text-color: #333;
-$font-stack: 'Segoe UI', sans-serif;
-
-// 🧱 Global Styles
 body {
+    background-color: #000; // black background
+    color: #fff;            // white text
     font-family: 'Poppins', sans-serif;
   }
   
-
-// 🎯 Sections
-header {
-  h1 {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 1.25rem;
-  }
-}
-
-nav {
   a {
-    color: $primary-color;
+    color: #66ccff;         // light blue links for contrast
+    text-decoration: none;
+  
     &:hover {
       text-decoration: underline;
     }
   }
-}
-
-section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-footer {
-  font-size: 0.85rem;
-  color: #ccc;
-}
+  
+  header, footer, section {
+    background-color: transparent;
+  }
+  
+  .navbar {
+    background-color: #111; // slightly lighter navbar
+  }
+  
+  .card {
+    background-color: #1a1a1a; // dark card backgrounds
+    color: #fff;
+  }
+  

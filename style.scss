@@ -1,28 +1,104 @@
+// Color variables
+$background-color: #000;
+$primary-color: #00bcd4;  // bright cyan
+$secondary-color: #ffffff;
+$accent-color: #1de9b6;   // greenish-blue accent
+$card-bg-color: #111;
+$text-color: #ccc;
+
+// Font variables
+$font-stack: 'Poppins', sans-serif;
+
+// Global styles
 body {
-    background-color: #000; // black background
-    color: #fff;            // white text
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  a {
-    color: #66ccff;         // light blue links for contrast
-    text-decoration: none;
-  
-    &:hover {
-      text-decoration: underline;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+// Header
+header {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  h1 {
+    font-size: 3rem;
+    color: $primary-color;
+
+    span {
+      color: $secondary-color;
     }
   }
-  
-  header, footer, section {
-    background-color: transparent;
+
+  p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 1rem auto 0;
   }
-  
-  .navbar {
-    background-color: #111; // slightly lighter navbar
+}
+
+// Stats boxes
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+
+  .stat-box {
+    background-color: $card-bg-color;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+
+    h2 {
+      font-size: 1.8rem;
+      color: $primary-color;
+    }
+
+    p {
+      margin: 0;
+    }
   }
-  
-  .card {
-    background-color: #1a1a1a; // dark card backgrounds
-    color: #fff;
+}
+
+// Section styles
+section {
+  padding: 3rem 2rem;
+
+  h2 {
+    font-size: 2rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
   }
-  
+
+  p {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .learn-more-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: $accent-color;
+    color: $background-color;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: lighten($accent-color, 10%);
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: $card-bg-color;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}

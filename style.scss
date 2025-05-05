@@ -34,7 +34,18 @@ header {
     }
   }
   
+.custom-header {
+    background-color: #072758; //dark blue
+    color: #f0f0f0; // light texr ;
+}
 
+.profile-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f0f0f0;
+}
 // Stats boxes
 .stats {
   display: flex;
